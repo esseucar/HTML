@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <metadata charset="utf8">
+        <title>Hover but JS</title>
+        
+</head>
+<body>
+    
+    <button type="button" id="btn">Button</button>
+    <p id="text"></p>
+    
+    <script>
+        
+        var btn = document.getElementById('btn');
+        var yazi = document.getElementById('text');
+
+        btn.addEventListener("mouseover", FmouseOver);
+        btn.addEventListener("mouseout", FmouseOut);
+        btn.addEventListener("mousedown", FmouseDown);
+        btn.addEventListener("mouseup", FmouseUp);
+        btn.addEventListener("click", Fclick);
+
+        function FmouseOver() { yazi.innerHTML = "mouse over!"; }
+        function FmouseOut() { yazi.innerHTML = "mouse out!"; }
+        function FmouseDown() { yazi.innerHTML = "mouse down!"; }
+        function FmouseUp() { yazi.innerHTML = "mouse up!"; }
+        function Fclick() { yazi.innerHTML = "mouse clicked!"; }
+
+    </script>
+
+</body>
+</html>

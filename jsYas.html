@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <metadata charset="utf8">
+        <title>Yas</title>
+        <!-- documen.getElementById() -->
+        <!--<script>
+        document.write("<font color=\"green\"> Örnek 3</font>");
+
+        </script>-->
+</head>
+<body>
+    <h1>Cone Volume</h1>
+    <input type="text" name="yas" id="yas"/>
+    <p id="yorum"></p>
+    <button type="button" onclick="yasolc()" value="tikla!">tikla!</button>
+
+
+
+    <script>
+        function yasolc() {
+            var yas = parseInt(document.getElementById('yas').value);
+            if (yas < 18) {
+                document.getElementById('yorum').innerHTML = "You cant take diriver license";
+            }
+            else {
+                document.getElementById('yorum').innerHTML = "You can take diriver license";
+            }
+        }
+    </script>
+
+</body>
+<!--<script>
+    alert("hey");
+</script>-->
+</html>

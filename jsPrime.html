@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <metadata charset="utf8">
+        <title>Yas</title>
+
+</head>
+<body>
+    <p>0-100 arası sayı</p>
+    <button type="button" onclick="Calc()" >Kontrol</button>
+    <input type="text" id="num"/>
+    <p id="sonuc"></p>
+
+    <script>
+        function Calc() {
+
+            var x = parseInt(document.getElementById('num').value);
+
+            if (x < 0 || x > 100) {
+                document.getElementById('sonuc').innerHTML = "Aralıkta değil";
+            }
+                
+            
+            
+
+            else {
+                if (x % 2 == 0 || x % 3 == 0 || x % 5 == 0 || x % 7 == 0) {
+                    if (x == 2 || x == 3 || x == 5 || x == 7) {
+                        document.getElementById('sonuc').innerHTML = "Asal";
+                    }
+                    else { document.getElementById('sonuc').innerHTML = "Asal Değil"; }
+                    
+                }
+                else { document.getElementById('sonuc').innerHTML = "Asal"; }
+            }
+            
+            
+        }
+    </script>
+
+</body>
+
+</html>

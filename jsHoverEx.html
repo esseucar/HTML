@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <metadata charset="utf8">
+        <title>Hover but JS</title>
+        <style>
+            #main {
+               background-color:yellow;
+               width:500px;                
+            }
+        </style>
+</head>
+<body>
+    <div id="main">
+        <h1 id="text" onmouseover="changeToBlueColor()" onmouseout="changeToBlackColor()" on> Out </h1>
+        
+    </div>
+    <script>
+        function changeToBlueColor() {
+            document.getElementById("text").style.color = "blue";
+            document.getElementById("text").innerHTML = "Over";
+            document.getElementById("main").style.background = "red";
+            document.getElementById("text").style.fontSize = "200px";
+        }
+        function changeToBlackColor() {
+            document.getElementById("text").style.color = "black";
+            document.getElementById("text").innerHTML = "Out";
+            document.getElementById("main").style.background = "yellow";
+            document.getElementById("text").style.fontSize = "100px";
+        }
+        
+    </script>
+
+</body>
+</html>

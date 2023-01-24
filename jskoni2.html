@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <metadata charset="utf8">
+        <title>Yas</title>
+        <!-- documen.getElementById() -->
+        <!--<script>
+        document.write("<font color=\"green\"> Örnek 3</font>");
+
+        </script>-->
+</head>
+<body>
+    <h1>Cone Volume</h1>
+    <table>
+        <tr>
+            <td>Radius:</td>
+            <td><input type="text" name="r" id="r" /></td>
+        </tr>
+
+        <tr>
+            <td>Height:</td>
+            <td><input type="text" name="h" id="h" /></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <button type="button" onclick="volumeCalc()" value="tikla!">Calculate Volume of cone</button>
+            </td>
+        </tr>
+    </table>
+
+    <p id="res"></p>
+
+    <script>
+        function volumeCalc() {
+            var r = parseInt(document.getElementById('r').value);
+            var h = parseInt(document.getElementById('h').value);
+            var volume = 0.33 * (Math.PI) * Math.pow(r, 2) * h;
+            document.getElementById('res').innerHTML = "Result: "+volume;
+            
+        }
+    </script>
+
+</body>
+<!--<script>
+    alert("hey");
+</script>-->
+</html>

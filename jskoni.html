@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <metadata charset="utf8">
+        <title>.cone volume</title>
+        <!-- documen.getElementById() -->
+        <!--<script>
+        document.write("<font color=\"green\"> Örnek 3</font>");
+
+        </script>-->
+</head>
+<body>
+    <h1>Cone Volume</h1>
+    <h3>volume of cone: <span id="volume"> </span></h3>
+
+
+    <script>
+        var r = parseInt(prompt("Enter r:"));
+        var h = parseInt(prompt("Enter h:"));
+        var volume = 0.33 * (Math.PI) * Math.pow(r, 2) * h;
+        document.getElementById('volume').innerHTML = volume;
+        document.write("h: " + h);
+        document.write("r: " + r);
+    </script>
+
+</body>
+<!--<script>
+    alert("hey");
+</script>-->
+</html>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <metadata charset="utf8">
+        <title>Liste Örneği</title>
+        <!-- documen.getElementById() -->
+        <!--<script>
+        document.write("<font color=\"green\"> Örnek 3</font>");
+
+        </script>-->
+</head>
+<body>
+    <h1>1 US dollar 0.83 Euro)</h1>
+    <h3>us Dollar <span id="dolar"> </span></h3>
+    <h3>Euro <span id="euro"> </span></h3>
+    <script>
+        /*var dollar = prompt("Enter dolar:");*/
+        var dolar = parseInt(prompt("Enter dolar:"));
+        var euro = (dolar * 0.83);
+        document.getElementById('dolar').innerHTML = dolar;
+        document.getElementById('euro').innerHTML=euro;
+    </script>
+</body>
+<!--<script>
+    alert("hey");
+</script>-->
+</html>

@@ -1,0 +1,170 @@
+﻿<html>
+<head>
+    <metadata charset="utf8">
+        <title>Checkbox</title>
+    <style>
+        div {
+            margin-top: 30px;
+            border-radius: 25px;
+            background: orange;
+        }
+
+        tr td  {
+            border-width: 5px;
+            border-color: orange;
+            color:aliceblue;
+        }
+
+            tr td input {
+                border-width: 5px;
+                border-color: orange;
+                
+                border-block-width: thick;
+                border-block-height: thick;
+            }
+        textarea {
+            border-width: 5px;
+            border-color: orange;
+            border-block-width: thick;
+            border-block-height: thick;
+        }
+
+        #navbar {
+            float: center;
+            background-color: darkorange;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 40%;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+            li a {
+                min-width: 200px;
+                color: aliceblue;
+                display: block;
+                background-color: orange;
+                text-decoration: none;
+                line-height: 50px;
+                text-align: center;
+                border-radius: 25px;
+                margin: 8px;
+                float: left;
+                font-family: 'Lucida Sans Unicode','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+            }
+
+                li a:hover {
+                    color: white;
+                    background-color: gray;
+                }
+        #logo{
+            margin:30px;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body background="C:\Users\khas\Desktop\HTML\images\indir.jpg">
+    
+    <div id="navbar">
+        <div id="logo">
+            <h1><a href="">
+                <div class="logo" style="background: darkorange; margin: 50px;">
+                    <img alt="FORUM SİTESİ" title="FORUM SİTESİ" src="images/indir.jpg" style="width: 344px;margin-top: 23px;"></a></h1>
+        
+            <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Ben kimim?</a></li>
+                <li><a href="#">Fotoğraflar</a></li>
+                <li><a href="#">Geziler</a></li>
+                <li><a href="#">İletişim </a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div>
+        <form>
+            <table   align="center" cellspacing="2px" cellpadding="5px" bgcolor="orange">
+
+                <tr>
+                    <td colspan="2" align="center"><b><h3>Registration Page</h3></b></td>
+                </tr>
+
+                <table align="center" cellspacing="2px" cellpadding="5px" bgcolor="orange">
+
+                    <tr>
+                        <td style="color:white">Username:</td>
+                        <td>
+                            <input type="text" name="adsoyad" placeholder="adınız" style="border-color:orange;  border-block-width:thick; border-block-height:thick" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="color:white">Password:</td>
+                        <td>
+                            <input type="password" name="pass" placeholder="şifre" style="border-color:orange;  border-block-width:thick; border-block-height:thick" />
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2">
+                            <a href="C:\Users\khas\Desktop\HTML\login2.html" style="color:white">Forgot Password ?</a>
+                        </td>
+                    </tr>
+
+
+
+
+                    <tr>
+                        <td colspan="2" align="center"><b>Contact Info</b></td>
+                    </tr>
+                    <tr>
+                        <td>Bday:</td>
+                        <td>
+                            <input type="date" name="bDate" placeholder="tarih" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Telefon:</td>
+                        <td>
+                            <input type="number" name="num" placeholder="telefon" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Email:</td>
+                        <td>
+                            <input type="email" name="email" placeholder="email" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Adres:</td>
+                        <td>
+                            <textarea name="adres" cols="30" rows="30" placeholder="örnek mah. örnek cad. no:123 kat:1"style="border-color:darkorange;  border-width:5px;"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr align="center">
+                        <td colspan="2">
+                            <input type="submit" value="login" style="border-color:darkorange;  border-block-width:thick; border-block-height:thick" />
+                        </td>
+                    </tr>
+
+                    <tr align="center">
+                        <td colspan="2">
+                            <input type="reset" value="reset" style="border-color:darkorange"/>
+                        </td>
+                    </tr>
+
+
+
+                </table>
+        </form>
+    </div>
+
+</body>
+</html>
